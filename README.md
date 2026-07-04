@@ -2,21 +2,21 @@
 
 > **Summerix Global AI & ML Internship – Task 3**
 
-An end-to-end Machine Learning project that demonstrates **data preprocessing, regression modeling, cross-validation, hyperparameter tuning, overfitting analysis, and model optimization** using the California Housing Dataset.
+An end-to-end Machine Learning project demonstrating **data preprocessing, regression modeling, cross-validation, hyperparameter tuning, overfitting analysis, and model optimization** using the California Housing Dataset.
 
 ---
 
 ## 🚀 Project Overview
 
-This project focuses on predicting California house prices using multiple regression algorithms. Different models were trained, evaluated, compared, and optimized to build a reliable prediction model with strong generalization performance.
+This project predicts California housing prices using multiple Machine Learning regression algorithms. Models were trained, evaluated, compared, and optimized to identify the best-performing model with strong generalization ability.
 
-The project follows an industry-standard machine learning workflow and emphasizes proper model validation before deployment.
+The project follows an industry-standard Machine Learning workflow, emphasizing proper preprocessing, model validation, hyperparameter tuning, and performance evaluation before deployment.
 
 ---
 
 ## ✨ Features
 
-- 📊 Data Preprocessing
+- 📊 Exploratory Data Analysis (EDA)
 - ⚙️ Feature Scaling using StandardScaler
 - 🤖 Multiple Regression Models
 - 📈 Model Evaluation (MAE, RMSE, R²)
@@ -28,7 +28,7 @@ The project follows an industry-standard machine learning workflow and emphasize
 
 ---
 
-# 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 - Python
 - NumPy
@@ -40,14 +40,14 @@ The project follows an industry-standard machine learning workflow and emphasize
 
 ---
 
-# 📂 Dataset
+## 📂 Dataset
 
 **California Housing Dataset**
 
-**Target Variable:**
+**Target Variable**
 - Median House Value
 
-**Features:**
+**Features**
 - MedInc
 - HouseAge
 - AveRooms
@@ -59,7 +59,7 @@ The project follows an industry-standard machine learning workflow and emphasize
 
 ---
 
-# 🤖 Models Implemented
+## 🤖 Models Implemented
 
 - Linear Regression
 - Ridge Regression
@@ -68,32 +68,34 @@ The project follows an industry-standard machine learning workflow and emphasize
 
 ---
 
-# 📊 Final Performance
+## 📊 Final Performance
 
 | Model | Test RMSE | Test R² |
-|--------|----------:|---------:|
+|:------|----------:|---------:|
 | Linear Regression | 0.7456 | 0.5758 |
 | Ridge Regression | 0.7456 | 0.5758 |
 | Decision Tree Regression | 0.7242 | 0.5997 |
 | 🏆 Tuned Decision Tree | **0.6387** | **0.6887** |
 
-The tuned Decision Tree achieved the best predictive performance after hyperparameter tuning using **GridSearchCV**.
+**Best Model:** Tuned Decision Tree Regressor
+
+The optimized Decision Tree achieved the lowest prediction error and highest R² score after GridSearchCV hyperparameter tuning.
 
 ---
 
-# 🔄 Cross Validation Results
+## 🔄 Cross Validation Results
 
 | Model | Mean CV RMSE |
-|--------|-------------:|
+|:------|-------------:|
 | Linear Regression | 0.7205 |
 | Ridge Regression | 0.7205 |
 | Decision Tree Regression | **0.7127** |
 
-The Decision Tree Regression model achieved the best baseline cross-validation performance.
+The Decision Tree Regression demonstrated the strongest baseline generalization performance before tuning.
 
 ---
 
-# ⚙️ Best Hyperparameters
+## ⚙️ Best Hyperparameters
 
 ```python
 criterion = "squared_error"
@@ -108,49 +110,49 @@ min_samples_split = 2
 
 ## 🏆 Final Model Comparison
 
-![Model Comparison](images/model_comparison.png)
+![Model Comparison](model_comparison.png)
 
 ---
 
 ## 📉 RMSE Comparison
 
-![RMSE Comparison](images/rmse_comparison.png)
+![RMSE Comparison](rmse_comparison.png)
 
 ---
 
 ## 📊 Feature Importance
 
-![Feature Importance](images/feature_importance.png)
+![Feature Importance](feature_importance.png)
 
 ---
 
 ## 🎯 Actual vs Predicted
 
-![Actual vs Predicted](images/actual_vs_predicted.png)
+![Actual vs Predicted](actual_vs_predicted.png)
 
 ---
 
 ## 🔄 Cross Validation Results
 
-![Cross Validation](images/cross_validation_results.png)
+![Cross Validation](cross_validation_results.png)
 
 ---
 
 ## ⚙️ GridSearchCV Results
 
-![GridSearchCV](images/gridsearch_results.png)
+![GridSearchCV Results](gridsearch_results.png)
 
 ---
 
-# 💾 Saved Models
+## 💾 Saved Models
 
-- **best_model_task3.pkl** → Final optimized production model.
-- **best_model.pkl** → Retained for backward compatibility.
-- **scaler.pkl** → StandardScaler used during preprocessing.
+- **best_model_task3.pkl** → Final optimized production model
+- **best_model.pkl** → Retained for backward compatibility
+- **scaler.pkl** → StandardScaler used during preprocessing
 
 ---
 
-# 📁 Project Structure
+## 📁 Project Structure
 
 ```text
 house-price-prediction-model-validation/
@@ -161,19 +163,17 @@ house-price-prediction-model-validation/
 │── best_model_task3.pkl
 │── best_model.pkl
 │── scaler.pkl
-│
-└── images/
-    ├── model_comparison.png
-    ├── rmse_comparison.png
-    ├── feature_importance.png
-    ├── actual_vs_predicted.png
-    ├── cross_validation_results.png
-    └── gridsearch_results.png
+│── model_comparison.png
+│── rmse_comparison.png
+│── feature_importance.png
+│── actual_vs_predicted.png
+│── cross_validation_results.png
+│── gridsearch_results.png
 ```
 
 ---
 
-# 🎯 Key Learning Outcomes
+## 🎯 Key Learning Outcomes
 
 - Machine Learning Workflow
 - Data Preprocessing
@@ -182,31 +182,33 @@ house-price-prediction-model-validation/
 - Cross Validation
 - Hyperparameter Tuning
 - GridSearchCV
-- Overfitting Detection
+- Overfitting Analysis
 - Model Generalization
 - Model Serialization
 
 ---
 
-# 🔮 Future Improvements
+## 🔮 Future Improvements
 
-- Random Forest & XGBoost Comparison
-- Web Deployment using Streamlit
-- Real-time Property Price Prediction
-- Model Explainability with SHAP
+- Random Forest Regression
+- XGBoost Regression
+- Streamlit Web Application
+- Real-Time House Price Prediction
+- Model Explainability using SHAP
 - Automated ML Pipeline
 
 ---
 
-# 👩‍💻 Author
+## 👩‍💻 Author
 
 **Bhakti Unhale**
 
-🎓 B.Tech CSE (Artificial Intelligence & Analytics)  
+🎓 B.Tech CSE (Artificial Intelligence & Analytics)
+
 🏫 MIT Art, Design and Technology University
 
 🔗 GitHub: https://github.com/bhaktibytes
 
 ---
 
-⭐ If you found this project helpful, consider giving it a **Star**!
+⭐ If you found this project useful, consider giving the repository a **Star**!
